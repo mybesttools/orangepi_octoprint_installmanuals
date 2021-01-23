@@ -20,25 +20,26 @@ sudo adduser octoprint sudo
 ####edit sudoers:
 sudo visudo
 
-####at the end of the file add a line:
+###at the end of the file add a line:
 
 octoprint ALL=(ALL) NOPASSWD:ALL
 
 [CTRL]-[X] + [Y] + [Enter] saves the doc
 
-####Now clear the password :
+###Now clear the password :
 
 sudo passwd octoprint -d
 
-####Login as octoprint
+###Login as octoprint
 
 sudo su octoprint
 
-####goto homedir
+###goto homedir
 
 cd ~
 
-####Install Pyserial 3.5
+###Install Pyserial 3.5
+
 python3 -m pip install pyserial
 
 ### Octoprint itself
